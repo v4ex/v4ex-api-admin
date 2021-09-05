@@ -1,0 +1,35 @@
+{
+  "name": "v4ex-api-admin",
+  "version": "1.0.x",
+  "description": "V4EX API System: Admin microservice.",
+  "repository": "github:v4ex/v4ex-api-admin",
+  "author": "V4EX Inc. <v4ex-api-admin@v4ex.com> (https://v4ex.com/)",
+  "contributors": [
+    "Xuwei Li <v4ex-api-admin@xuwei.li> (https://xuwei.li/)"
+  ],
+  "license": "GPL-3.0",
+  "main": "index.js",
+  "files": [
+    ".env.example",
+    "index.js",
+    "LICENSE",
+    "mongoose.js"
+  ],
+  "scripts": {
+    "dev": "nodemon server",
+    "test": "jest",
+    "test:watch": "jest --watch"
+  },
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "google-auth-library": "^7.9.1",
+    "mongoose": "^6.0.4",
+    "v4ex-api-authentication": "^1.0.2",
+    "v4ex-api-core": "^1.0.0"
+  },
+  "devDependencies": {
+    "jest": "^27.1.0",
+    "nodemon": "^2.0.12"
+  }
+}
